@@ -1,0 +1,11 @@
+* {
+    font-family: Calibri, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(5, 7, 141), rgb(72, 191, 221));
+    font-weight: 100;
+    font-size: 60px;
+}
+
