@@ -9,3 +9,10 @@ h1 {
     font-size: 60px;
 }
 
+p {
+    margin: 0px;
+}
+
+.bold {
+font-weight: bold;
+}
