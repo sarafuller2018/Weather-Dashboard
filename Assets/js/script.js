@@ -49,9 +49,12 @@ function getCurrentWeather(lat, long) {
             var currentTemp = document.createElement("p");
             var currentWind = document.createElement("p");
             var currentHumidity = document.createElement("p");
-            var icon = data.weather[0].icon;
+            var weatherIcon = data.weather[0].icon;
+            var loadWeatherIcon = document.getElementById("weatherIcon");
+           
+            loadWeatherIcon.setAttribute("src", "http://openweathermap.org/img/w/" + weatherIcon +".png");
 
-            createHeaderCity.textContent = data.name + " " + icon;
+            createHeaderCity.textContent = data.name;
             createCurrentDate.textContent = dayjs().format("MM/DD/YYYY");
             createCurrentDate.classList.add("bold");
             currentTemp.textContent = "Temperature: " + data.main.temp + " °F";
@@ -83,6 +86,7 @@ function get5DayWeather(lat, long) {
 //adds button with city to page
 function saveCityButton(city) {
     var addHistory = document.createElement("button");
+    addHistory.setAttribute("class", "w-75 m-2");
     addHistory.textContent = city;
     addHistory.addEventListener("click", function (event) {
 
