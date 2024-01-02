@@ -242,3 +242,7 @@ init();
 // }
 // addTwoNumbers(10, 6);
 // addTwoNumbers(5,9);
+
+//local storage
+//styling
+//consolidate
