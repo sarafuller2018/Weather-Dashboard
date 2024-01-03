@@ -1,6 +1,6 @@
 # Weather-Dashboard
 
-
+https://sarafuller2018.github.io/Weather-Dashboard/ 
 
 ## Description
 
@@ -25,4 +25,4 @@ Please refer to the LICENSE in the repo.
 
 ## Screenshot of Website
 
-![Alt text]()
+![Alt text](./Assets/images/Screenshot%202024-01-02%20200233.png)
