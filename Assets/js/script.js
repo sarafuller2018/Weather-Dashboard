@@ -66,7 +66,7 @@ function getCurrentWeather(lat, long) {
             var currentHumidity = document.createElement("p");
             var weatherIcon = data.weather[0].icon;
             var loadWeatherIcon = document.createElement("img");
-            loadWeatherIcon.setAttribute("src", "http://openweathermap.org/img/w/" + weatherIcon + ".png");
+            loadWeatherIcon.setAttribute("src", "https://openweathermap.org/img/w/" + weatherIcon + ".png");
 
             createHeaderCity.textContent = data.name;
             createCurrentDate.textContent = dayjs().format("MM/DD/YYYY");
