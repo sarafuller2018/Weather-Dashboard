@@ -29,7 +29,7 @@ submitCityButtonEl.addEventListener("click", function () {
 
 // retrieves longitude and latitude of city
 function getGeoCoding(city) {
-    var geoURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=" + APIKey;
+    var geoURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=" + APIKey;
 
     fetch(geoURL)
         .then(function (response) {
@@ -89,7 +89,7 @@ function get5DayWeather(lat, long) {
 
     fiveDayWeatherEl.innerHTML = "";
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long + "&appid=" + APIKey + "&units=imperial";
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long + "&appid=" + APIKey + "&units=imperial";
     fetch(queryURL)
         .then(function (response) {
             return response.json();
@@ -116,7 +116,7 @@ function get5DayWeather(lat, long) {
                 var Humidity = document.createElement("p");
                 var weatherIcon = data.list[i].weather[0].icon;
                 var loadWeatherIcon = document.createElement("img");
-                loadWeatherIcon.setAttribute("src", "http://openweathermap.org/img/w/" + weatherIcon + ".png");
+                loadWeatherIcon.setAttribute("src", "https://openweathermap.org/img/w/" + weatherIcon + ".png");
 
                 Date.textContent = dayjs(data.list[i].dt_txt).format("MM/DD/YYYY");
                 Date.classList.add("bold");
