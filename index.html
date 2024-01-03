@@ -14,10 +14,9 @@
         <h1 class="text-white p-2">Weather Dashboard</h1>
     </header>
 
-
     <section class="contentContainer">
         <div class="row">
-            <!--Search for a city section-->
+            <!--Search for a city-->
             <div class="col-3 col-md-4 col-lg-3">
                 <h2 class="m-2">Search for a City:</h2>
                 <form class="w-100">
@@ -25,23 +24,22 @@
                 </form>
                 <input type="submit" id="submitCityButton" class="w-75 m-2">
                 <hr class="w-75 m-2">
-                <!--Display search history section-->
-                <div id="searchHistory" class="w-75 m-2">
+                <!--Search history-->
+                <div id="searchHistory" class="w-100">
                 </div>
             </div>
-            <div >
-                <!--Display city weather section-->
-                <div id="currentWeatherDiv" ></div>
 
-                <!--5 day weather section-->
-                <div id="5dayWeather" >
-                   
+            <div>
+                <!--Current weather-->
+                <div id="currentWeatherDiv">
+                </div>
+
+                <!--5 day weather-->
+                <div id="5dayWeather" class="mt-3">
                 </div>
             </div>
         </div>
     </section>
-    <!-- class="col-12 col-md-8 col-lg-9"
-class="col-12 col-md-8 col-lg-9" -->
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./Assets/js/script.js"></script>

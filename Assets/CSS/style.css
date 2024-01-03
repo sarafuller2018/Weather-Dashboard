@@ -1,5 +1,6 @@
 * {
     font-family: Calibri, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -14,11 +15,23 @@ p {
 }
 
 .bold {
-font-weight: bold;
+    font-weight: bold;
 }
-.row{
+
+.row {
     flex-wrap: nowrap;
 }
-.fiveDaySection{
+
+.fiveDaySection {
     display: flex;
+}
+
+.fiveDayWrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.paddingNoWrap {
+    padding-left: 35px;
+    padding-right: 35px;
 }
