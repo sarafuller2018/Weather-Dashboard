@@ -16,3 +16,9 @@ p {
 .bold {
 font-weight: bold;
 }
+.row{
+    flex-wrap: nowrap;
+}
+.fiveDaySection{
+    display: flex;
+}
